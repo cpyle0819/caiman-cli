@@ -1,15 +1,23 @@
 {
-  "name": "@caiman/caiman-cli",
+  "name": "caiman-cli",
   "version": "0.1.0",
   "description": "A command line utility for the things I do a lot in AWS.",
-  "main": "index.js",
+  "bin": {
+    "caiman": "dist/index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "keywords": [
     "aws",
     "cli"
   ],
   "author": "Corey Pyle <cpyle0819>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "rollup": "^3.28.1"
+  },
+  "type": "module"
 }
