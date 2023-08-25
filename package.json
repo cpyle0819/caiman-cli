@@ -1,0 +1,15 @@
+{
+  "name": "@caiman/caiman-cli",
+  "version": "0.1.0",
+  "description": "A command line utility for the things I do a lot in AWS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "cli"
+  ],
+  "author": "Corey Pyle <cpyle0819>",
+  "license": "ISC"
+}
