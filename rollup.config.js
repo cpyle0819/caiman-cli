@@ -1,9 +1,14 @@
+import typescript from "@rollup/plugin-typescript";
+import {nodeResolve} from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+
 export default {
-  input: "src/index.js",
+  input: "src/index.ts",
   output: {
-    file: "dist/index.js",
+    dir: "dist",
     banner: "#!/usr/bin/env node",
     compact: true,
-    format: "cjs",
+    format: "es",
   },
+  plugins: [typescript(), nodeResolve({preferBuiltins: true}), commonjs()],
 };

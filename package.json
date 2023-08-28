@@ -1,7 +1,7 @@
 {
   "name": "caiman-cli",
-  "version": "0.1.0",
-  "description": "A command line utility for the things I do a lot in AWS.",
+  "version": "0.2.0",
+  "description": "A command line utility for AWS builders.",
   "bin": {
     "caiman": "dist/index.js"
   },
@@ -14,10 +14,18 @@
   ],
   "author": "Corey Pyle <cpyle0819>",
   "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
     "@rollup/plugin-node-resolve": "^15.2.1",
-    "rollup": "^3.28.1"
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.5.6",
+    "rollup": "^3.28.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
   },
   "type": "module"
 }
